@@ -36,6 +36,7 @@ namespace pryTabordaEDS
                 ult.Siguiente = nuevo;
                 ult = nuevo;
             }
+        }
 
         public void Eliminar()
         {
@@ -47,6 +48,16 @@ namespace pryTabordaEDS
             else
             {
                 Primero = Primero.Siguiente;
+            }
+        }
+
+        public void Recorrer()
+        {
+            clsNodo actual = Primero;
+            while (actual != null)
+            {
+                Console.WriteLine($"Codigo: {actual.Codigo}, Nombre: {actual.Nombre}, Tramite: {actual.Tramite}");
+                actual = actual.Siguiente;
             }
         }
     }
