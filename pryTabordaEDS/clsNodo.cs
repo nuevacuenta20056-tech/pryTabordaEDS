@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +12,7 @@ namespace pryTabordaEDS
         private Int32 cod;
         private string nom;
         private String tra;
+        private clsNodo sig;
 
         //Propiedades del nodoo
         public Int32 Codigo
@@ -28,5 +30,12 @@ namespace pryTabordaEDS
             get { return tra; }
             set { tra = value; }
         }
-    }
+
+        public clsNodo Siguiente
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
+       
+        }
 }
