@@ -47,6 +47,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArchivoTexto.cs" />
+    <Compile Include="clsNodo.cs" />
+    <Compile Include="FrmDatoDesarrollador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatoDesarrollador.Designer.cs">
+      <DependentUpon>FrmDatoDesarrollador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCola.Designer.cs">
+      <DependentUpon>FrmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlumnos.Designer.cs">
+      <DependentUpon>FrmAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCarreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCarreras.Designer.cs">
+      <DependentUpon>FrmCarreras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMeses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMeses.Designer.cs">
+      <DependentUpon>FrmMeses.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmColores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +112,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -88,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\650_1200.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
