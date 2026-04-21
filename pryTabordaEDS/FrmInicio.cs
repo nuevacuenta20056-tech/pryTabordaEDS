@@ -27,5 +27,10 @@ namespace pryTabordaEDS
             FrmColores x = new FrmColores();
             x.ShowDialog();
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
