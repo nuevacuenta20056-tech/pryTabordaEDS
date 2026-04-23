@@ -48,8 +48,15 @@
   <ItemGroup>
     <Compile Include="clsArchivoTexto.cs" />
     <Compile Include="clsCola.cs" />
+    <Compile Include="clsFila.cs" />
     <Compile Include="clsNodo.cs" />
-    <Compile Include="Fila.cs" />
+    <Compile Include="clsPila.cs" />
+    <Compile Include="FrmPila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPila.Designer.cs">
+      <DependentUpon>FrmPila.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCola.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMeses.resx">
       <DependentUpon>FrmMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPila.resx">
+      <DependentUpon>FrmPila.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

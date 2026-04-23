@@ -28,6 +28,12 @@ namespace pryTabordaEDS
             x.ShowDialog();
         }
 
+        private void pilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPila x = new FrmPila();
+            x.ShowDialog();
+        }
+
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
 
