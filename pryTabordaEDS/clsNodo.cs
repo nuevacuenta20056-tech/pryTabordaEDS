@@ -13,6 +13,7 @@ namespace pryTabordaEDS
         private string nom;
         private String tra;
         private clsNodo sig;
+        private clsNodo ant;
 
         //Propiedades del nodoo
         public Int32 Codigo
@@ -36,6 +37,10 @@ namespace pryTabordaEDS
             get { return sig; }
             set { sig = value; }
         }
-       
+        public clsNodo Anterior
+        {
+            get { return ant; }
+            set { ant = value; }
         }
+    }
 }

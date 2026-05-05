@@ -49,6 +49,8 @@
     <Compile Include="clsArchivoTexto.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsFila.cs" />
+    <Compile Include="clsListaDoble.cs" />
+    <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
     <Compile Include="FrmPila.cs">

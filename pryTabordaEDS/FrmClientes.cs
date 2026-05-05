@@ -21,5 +21,17 @@ namespace pryTabordaEDS
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        { }
+            private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto objCliente = new clsArchivoTexto();
+            objCliente.NomArchiv = "Clientes.csv";
+            objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
+
+            MessageBox.Show("Grabado!");
+        }
     }
-}
+    }
+

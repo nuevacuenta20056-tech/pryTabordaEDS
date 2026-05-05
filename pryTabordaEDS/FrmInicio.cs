@@ -38,5 +38,41 @@ namespace pryTabordaEDS
         {
 
         }
+
+        private void mesesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmClientes x = new FrmClientes();
+            x.ShowDialog();
+        }
+
+        private void mesesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void clientesToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FrmClientes x = new FrmClientes();
+            x.ShowDialog();
+        }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAlumnos x = new FrmAlumnos();
+            x.ShowDialog();
+        }
+
+        private void colaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCola x = new FrmCola();
+            x.ShowDialog();
+
+        }
     }
 }

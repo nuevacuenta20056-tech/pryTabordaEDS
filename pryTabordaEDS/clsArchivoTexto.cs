@@ -44,5 +44,9 @@ namespace pryTabordaEDS
             string DatoLeido;
         }
 
-}
+        internal void Grabar(object text1, object text2, object text3)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
