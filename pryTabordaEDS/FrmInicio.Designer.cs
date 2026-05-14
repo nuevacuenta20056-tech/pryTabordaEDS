@@ -47,7 +47,9 @@
             this.pilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasNoLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,7 +167,7 @@
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // colaToolStripMenuItem
@@ -178,7 +180,7 @@
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
-            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pilaToolStripMenuItem.Text = "Pila";
             this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
@@ -191,15 +193,30 @@
             // 
             // estructurasNoLinealesToolStripMenuItem
             // 
+            this.estructurasNoLinealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4,
+            this.listaSimpleToolStripMenuItem});
             this.estructurasNoLinealesToolStripMenuItem.Name = "estructurasNoLinealesToolStripMenuItem";
             this.estructurasNoLinealesToolStripMenuItem.Size = new System.Drawing.Size(136, 20);
             this.estructurasNoLinealesToolStripMenuItem.Text = "Estructuras no lineales";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Text = "Lista Doble";
             // 
             // baseDeDatosToolStripMenuItem
             // 
             this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
             this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
             this.baseDeDatosToolStripMenuItem.Text = "Base de datos";
+            // 
+            // listaSimpleToolStripMenuItem
+            // 
+            this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaSimpleToolStripMenuItem.Text = "Lista Simple";
             // 
             // FrmInicio
             // 
@@ -242,6 +259,8 @@
         private System.Windows.Forms.ToolStripMenuItem colaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pilaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem listaSimpleToolStripMenuItem;
     }
 }
 

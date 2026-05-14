@@ -53,6 +53,18 @@
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
+    <Compile Include="FrmListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaDoble.Designer.cs">
+      <DependentUpon>FrmListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaSimple.Designer.cs">
+      <DependentUpon>FrmListaSimple.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaDoble.resx">
+      <DependentUpon>FrmListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaSimple.resx">
+      <DependentUpon>FrmListaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMeses.resx">
       <DependentUpon>FrmMeses.cs</DependentUpon>

@@ -62,16 +62,47 @@ namespace pryTabordaEDS
                         Aux.Anterior = Nvo;
                         Nvo.Anterior = Ant;
                     }
-
-                    public void  Recorrer()
-                    {
-                        clsNodo Aux = Primero;
-                        while (Aux != null)
-                        {
-                            Console.WriteLine($"Codigo: {Aux.Codigo}, Nombre: {Aux.Nombre}, Tramite: {Aux.Tramite}");
-                            Aux = Aux.Siguiente;
+                }
             }
         }
+
+        // Elimina el nodo del frente (Primero) y lo devuelve. Retorna null si la lista está vacía.
+        public clsNodo Eliminar()
+        {
+            if (Primero == null)
+            {
+                return null;
+            }
+
+            clsNodo eliminado = Primero;
+
+            if (Primero == Ultimo)
+            {
+                // Solo un elemento
+                Primero = null;
+                Ultimo = null;
+            }
+            else
+            {
+                // Mover el primero al siguiente
+                Primero = Primero.Siguiente;
+                if (Primero != null)
+                {
+                    Primero.Anterior = null;
+                }
+                eliminado.Siguiente = null;
+            }
+
+            return eliminado;
+        }
+
+        public void Recorrer()
+        {
+            clsNodo Aux = Primero;
+            while (Aux != null)
+            {
+                Console.WriteLine($"Codigo: {Aux.Codigo}, Nombre: {Aux.Nombre}, Tramite: {Aux.Tramite}");
+                Aux = Aux.Siguiente;
             }
         }
     }

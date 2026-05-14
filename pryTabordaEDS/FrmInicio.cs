@@ -15,6 +15,10 @@ namespace pryTabordaEDS
         public FrmInicio()
         {
             InitializeComponent();
+
+            // Registrar manejadores para los items del menú que no tenían evento en el diseñador
+            listaSimpleToolStripMenuItem.Click += listaSimpleToolStripMenuItem_Click;
+            toolStripMenuItem4.Click += listaDobleToolStripMenuItem_Click;
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,7 +76,20 @@ namespace pryTabordaEDS
         {
             FrmCola x = new FrmCola();
             x.ShowDialog();
+        }
 
+        // Maneador para abrir Lista Simple
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListaSimple f = new FrmListaSimple();
+            f.ShowDialog();
+        }
+
+        // Maneador para abrir Lista Doble
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListaDoble f = new FrmListaDoble();
+            f.ShowDialog();
         }
     }
 }

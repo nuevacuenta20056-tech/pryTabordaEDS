@@ -41,39 +41,55 @@ namespace pryTabordaEDS
             {
                 pri = pri.Siguiente;
             }
-
-
         }
 
         internal void Recorrer(string NombreArchivo)
         {
             clsNodo aux = pri;
-            StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8);
-            AD.WriteLine("Lista de personas");
-            AD.WriteLine("Codigo\tNombre\tTramite");
-            while (aux != null)
+            using (StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8))
             {
-               AD.Write(aux.Codigo);
-                AD.Write("");
-                AD.Write(aux.Nombre);
-                AD.Write(";");
-                AD.WriteLine(aux.Tramite);
-                aux = aux.Siguiente;
+                AD.WriteLine("Lista de personas");
+                AD.WriteLine("Codigo\tNombre\tTramite");
+                while (aux != null)
+                {
+                    AD.Write(aux.Codigo);
+                    AD.Write("\t");
+                    AD.Write(aux.Nombre);
+                    AD.Write(";/");
+                    AD.WriteLine(aux.Tramite);
+                    aux = aux.Siguiente;
+                }
             }
-            AD.Close();
-
         }
 
         internal void Recorrer(DataGridView dgvPila)
         {
-       
+            // Asegurar que la grilla tenga columnas (si no se definen en el diseñador)
+            if (dgvPila.Columns.Count == 0)
+            {
+                dgvPila.Columns.Add("Codigo", "Codigo");
+                dgvPila.Columns.Add("Nombre", "Nombre");
+                dgvPila.Columns.Add("Tramite", "Tramite");
+            }
+
+            dgvPila.Rows.Clear();
+            clsNodo aux = pri;
+            while (aux != null)
+            {
+                dgvPila.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Siguiente;
+            }
         }
 
         internal void Recorrer(ListBox lstPila)
         {
-            throw new NotImplementedException();
+            lstPila.Items.Clear();
+            clsNodo aux = pri;
+            while (aux != null)
+            {
+                lstPila.Items.Add($"{aux.Codigo} - {aux.Nombre}");
+                aux = aux.Siguiente;
+            }
         }
-
-
     }
 }
