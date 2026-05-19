@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsArbolBinario.cs" />
     <Compile Include="clsArchivoTexto.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsFila.cs" />
@@ -53,6 +54,18 @@
     <Compile Include="clsListaSimple.cs" />
     <Compile Include="clsNodo.cs" />
     <Compile Include="clsPila.cs" />
+    <Compile Include="FrmArbolBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbolBinario.Designer.cs">
+      <DependentUpon>FrmArbolBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrafo.Designer.cs">
+      <DependentUpon>FrmGrafo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListaDoble.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +137,9 @@
     <EmbeddedResource Include="FrmAlumnos.resx">
       <DependentUpon>FrmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmArbolBinario.resx">
+      <DependentUpon>FrmArbolBinario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCarreras.resx">
       <DependentUpon>FrmCarreras.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmColores.resx">
       <DependentUpon>FrmColores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrafo.resx">
+      <DependentUpon>FrmGrafo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
