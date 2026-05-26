@@ -19,6 +19,10 @@ namespace pryTabordaEDS
             // Registrar manejadores para los items del menú que no tenían evento en el diseñador
             listaSimpleToolStripMenuItem.Click += listaSimpleToolStripMenuItem_Click;
             toolStripMenuItem4.Click += listaDobleToolStripMenuItem_Click;
+
+            // Registrar manejadores para la sección "Base de datos"
+            grafoToolStripMenuItem.Click += grafoToolStripMenuItem_Click;
+            arbolToolStripMenuItem.Click += arbolBinarioToolStripMenuItem_Click;
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,6 +93,18 @@ namespace pryTabordaEDS
         private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmListaDoble f = new FrmListaDoble();
+            f.ShowDialog();
+        }
+
+        private void grafoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGrafo f = new FrmGrafo();
+            f.ShowDialog();
+        }
+
+        private void arbolBinarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmArbolBinario f = new FrmArbolBinario();
             f.ShowDialog();
         }
     }
