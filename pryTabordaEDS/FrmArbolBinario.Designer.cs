@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmArbolBinario));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbtnPostOrden = new System.Windows.Forms.RadioButton();
+            this.rbtnPreOrden = new System.Windows.Forms.RadioButton();
+            this.rbtnOrden = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -48,9 +51,6 @@
             this.lblCodigo = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvPila = new System.Windows.Forms.DataGridView();
-            this.rbtnOrden = new System.Windows.Forms.RadioButton();
-            this.rbtnPreOrden = new System.Windows.Forms.RadioButton();
-            this.rbtnPostOrden = new System.Windows.Forms.RadioButton();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,6 +73,41 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado del Arbol";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // rbtnPostOrden
+            // 
+            this.rbtnPostOrden.AutoSize = true;
+            this.rbtnPostOrden.Location = new System.Drawing.Point(36, 137);
+            this.rbtnPostOrden.Name = "rbtnPostOrden";
+            this.rbtnPostOrden.Size = new System.Drawing.Size(72, 17);
+            this.rbtnPostOrden.TabIndex = 2;
+            this.rbtnPostOrden.TabStop = true;
+            this.rbtnPostOrden.Text = "Post-Orde";
+            this.rbtnPostOrden.UseVisualStyleBackColor = true;
+            this.rbtnPostOrden.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // rbtnPreOrden
+            // 
+            this.rbtnPreOrden.AutoSize = true;
+            this.rbtnPreOrden.Location = new System.Drawing.Point(36, 94);
+            this.rbtnPreOrden.Name = "rbtnPreOrden";
+            this.rbtnPreOrden.Size = new System.Drawing.Size(73, 17);
+            this.rbtnPreOrden.TabIndex = 1;
+            this.rbtnPreOrden.TabStop = true;
+            this.rbtnPreOrden.Text = "Pre-Orden";
+            this.rbtnPreOrden.UseVisualStyleBackColor = true;
+            this.rbtnPreOrden.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // rbtnOrden
+            // 
+            this.rbtnOrden.AutoSize = true;
+            this.rbtnOrden.Location = new System.Drawing.Point(36, 48);
+            this.rbtnOrden.Name = "rbtnOrden";
+            this.rbtnOrden.Size = new System.Drawing.Size(65, 17);
+            this.rbtnOrden.TabIndex = 0;
+            this.rbtnOrden.TabStop = true;
+            this.rbtnOrden.Text = "in-Orden";
+            this.rbtnOrden.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -234,6 +269,7 @@
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dgvPila
             // 
@@ -246,41 +282,6 @@
             this.dgvPila.Name = "dgvPila";
             this.dgvPila.Size = new System.Drawing.Size(366, 205);
             this.dgvPila.TabIndex = 5;
-            // 
-            // rbtnOrden
-            // 
-            this.rbtnOrden.AutoSize = true;
-            this.rbtnOrden.Location = new System.Drawing.Point(36, 48);
-            this.rbtnOrden.Name = "rbtnOrden";
-            this.rbtnOrden.Size = new System.Drawing.Size(65, 17);
-            this.rbtnOrden.TabIndex = 0;
-            this.rbtnOrden.TabStop = true;
-            this.rbtnOrden.Text = "in-Orden";
-            this.rbtnOrden.UseVisualStyleBackColor = true;
-            // 
-            // rbtnPreOrden
-            // 
-            this.rbtnPreOrden.AutoSize = true;
-            this.rbtnPreOrden.Location = new System.Drawing.Point(36, 94);
-            this.rbtnPreOrden.Name = "rbtnPreOrden";
-            this.rbtnPreOrden.Size = new System.Drawing.Size(73, 17);
-            this.rbtnPreOrden.TabIndex = 1;
-            this.rbtnPreOrden.TabStop = true;
-            this.rbtnPreOrden.Text = "Pre-Orden";
-            this.rbtnPreOrden.UseVisualStyleBackColor = true;
-            this.rbtnPreOrden.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // rbtnPostOrden
-            // 
-            this.rbtnPostOrden.AutoSize = true;
-            this.rbtnPostOrden.Location = new System.Drawing.Point(36, 137);
-            this.rbtnPostOrden.Name = "rbtnPostOrden";
-            this.rbtnPostOrden.Size = new System.Drawing.Size(72, 17);
-            this.rbtnPostOrden.TabIndex = 2;
-            this.rbtnPostOrden.TabStop = true;
-            this.rbtnPostOrden.Text = "Post-Orde";
-            this.rbtnPostOrden.UseVisualStyleBackColor = true;
-            this.rbtnPostOrden.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // Codigo
             // 
