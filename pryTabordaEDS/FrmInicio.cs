@@ -113,5 +113,11 @@ namespace pryTabordaEDS
             FrmCarreras f = new FrmCarreras();
             f.ShowDialog();
         }
+
+        private void sQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSQL f = new FrmSQL();
+            f.ShowDialog();
+        }
     }
 }
