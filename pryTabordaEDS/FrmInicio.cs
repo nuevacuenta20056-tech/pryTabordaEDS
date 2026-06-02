@@ -107,5 +107,11 @@ namespace pryTabordaEDS
             FrmArbolBinario f = new FrmArbolBinario();
             f.ShowDialog();
         }
+
+        private void carrerasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCarreras f = new FrmCarreras();
+            f.ShowDialog();
+        }
     }
 }

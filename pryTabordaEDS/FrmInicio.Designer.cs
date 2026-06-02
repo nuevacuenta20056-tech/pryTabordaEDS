@@ -52,6 +52,7 @@
             this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grafoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +112,8 @@
             this.provinciasToolStripMenuItem,
             this.mesesToolStripMenuItem,
             this.diasToolStripMenuItem,
-            this.clientesToolStripMenuItem});
+            this.clientesToolStripMenuItem,
+            this.carrerasToolStripMenuItem});
             this.pOOToolStripMenuItem.Name = "pOOToolStripMenuItem";
             this.pOOToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.pOOToolStripMenuItem.Text = "POO";
@@ -119,39 +121,39 @@
             // coloresToolStripMenuItem
             // 
             this.coloresToolStripMenuItem.Name = "coloresToolStripMenuItem";
-            this.coloresToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.coloresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.coloresToolStripMenuItem.Text = "Colores";
             this.coloresToolStripMenuItem.Click += new System.EventHandler(this.coloresToolStripMenuItem_Click);
             // 
             // ciudadesToolStripMenuItem
             // 
             this.ciudadesToolStripMenuItem.Name = "ciudadesToolStripMenuItem";
-            this.ciudadesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.ciudadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ciudadesToolStripMenuItem.Text = "Ciudades";
             // 
             // provinciasToolStripMenuItem
             // 
             this.provinciasToolStripMenuItem.Name = "provinciasToolStripMenuItem";
-            this.provinciasToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.provinciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.provinciasToolStripMenuItem.Text = "Provincias";
             // 
             // mesesToolStripMenuItem
             // 
             this.mesesToolStripMenuItem.Name = "mesesToolStripMenuItem";
-            this.mesesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.mesesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mesesToolStripMenuItem.Text = "Meses";
             this.mesesToolStripMenuItem.Click += new System.EventHandler(this.mesesToolStripMenuItem_Click_1);
             // 
             // diasToolStripMenuItem
             // 
             this.diasToolStripMenuItem.Name = "diasToolStripMenuItem";
-            this.diasToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.diasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.diasToolStripMenuItem.Text = "Dias";
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click_1);
             // 
@@ -235,6 +237,13 @@
             this.arbolToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.arbolToolStripMenuItem.Text = "Arbol";
             // 
+            // carrerasToolStripMenuItem
+            // 
+            this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
+            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carrerasToolStripMenuItem.Text = "Carreras";
+            this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,6 +290,7 @@
         private System.Windows.Forms.ToolStripMenuItem listaSimpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem grafoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arbolToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carrerasToolStripMenuItem;
     }
 }
 

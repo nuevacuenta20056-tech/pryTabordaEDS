@@ -134,6 +134,12 @@
     <Compile Include="FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSQL.Designer.cs">
+      <DependentUpon>FrmSQL.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAlumnos.resx">
