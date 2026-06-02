@@ -6,9 +6,30 @@ namespace pryTabordaEDS
 {
     public partial class FrmSQL : Form
     {
+        private readonly clsBasedeDatos db = new clsBasedeDatos();
+        private DataGridView dgvResultado;
+
         public FrmSQL()
         {
             InitializeComponent();
+
+            // Crear DataGridView dentro del panel de resultado
+            dgvResultado = new DataGridView
+            {
+                Name = "dgvResultado",
+                Dock = DockStyle.Fill,
+                ReadOnly = true,
+                AllowUserToAddRows = false,
+                AllowUserToDeleteRows = false,
+                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill,
+                BackgroundColor = System.Drawing.Color.WhiteSmoke
+            };
+
+            if (pnlResultado != null)
+            {
+                pnlResultado.Controls.Clear();
+                pnlResultado.Controls.Add(dgvResultado);
+            }
 
             // Registrar manejadores (asegurarse de que los controles existen)
             if (btnListar != null) btnListar.Click += btnListar_Click;
@@ -20,22 +41,28 @@ namespace pryTabordaEDS
             var sql = txtSQL?.Text.Trim();
             if (string.IsNullOrEmpty(sql))
             {
-                MessageBox.Show("Ingrese una consulta SQL.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ingrese una consulta SQL o el nombre de la tabla.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtSQL?.Focus();
                 return;
             }
 
-            pnlResultado.Controls.Clear();
-            var lbl = new Label
+            try
             {
-                AutoSize = false,
-                Text = "Aquí se mostrará el resultado de la consulta (implementar conexión y llenado).",
-                TextAlign = System.Drawing.ContentAlignment.MiddleCenter,
-                Dock = DockStyle.Fill,
-                ForeColor = System.Drawing.Color.FromArgb(30, 30, 60),
-                Font = new System.Drawing.Font("Segoe UI", 9.5F)
-            };
-            pnlResultado.Controls.Add(lbl);
+                // Si el texto no contiene espacios, se trata como nombre de tabla (comportamiento TableDirect)
+                if (!sql.Contains(" "))
+                {
+                    db.Listar(sql, dgvResultado);
+                }
+                else
+                {
+                    // Ejecuta la consulta SELECT y vuelca el resultado en el DataGridView
+                    db.EjecutarConsulta(sql, dgvResultado);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error al ejecutar consulta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
